@@ -1,27 +1,27 @@
 // Q. Write a JavaScript function to clone an array.
-// console.log(array_Clone([1, 2, 4, 0]));
-// console.log(array_Clone([1, 2, [4, 0]]));
+console.log(array_Clone([1, 2, 4, 0]));
+console.log(array_Clone([1, 2, [4, 0]]));
 
-// const Clone_Array = function(arr){
-//   return arr.slice(0);
-// }
-//  console.log(Clone_Array([1, 2, 4, 0]));
-//  console.log(Clone_Array([1, 2, [4, 0]]));
+const Clone_Array = function(arr){
+  return arr.slice(0);
+}
+ console.log(Clone_Array([1, 2, 4, 0]));
+ console.log(Clone_Array([1, 2, [4, 0]]));
 
 // Q. 3. Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array
 
-// const first_elem = function (arr , n ){
-//    if(n<0){
-//      console.log("invalid Number has been given ")
-//    }
-//   else{ 
-//   return arr.slice(0 , n )
-//   }
-// }
-// console.log(first_elem([1,2,3,4,5] , 1 ))
-// console.log(first_elem([1,2,3,4,5] ,0  ))
-// console.log(first_elem([1,2,3,4,5] , -1 ))
-// console.log(first_elem([1,2,3,4,5] , 5 ))
+const first_elem = function (arr , n ){
+   if(n<0){
+     console.log("invalid Number has been given ")
+   }
+  else{ 
+  return arr.slice(0 , n )
+  }
+}
+console.log(first_elem([1,2,3,4,5] , 1 ))
+console.log(first_elem([1,2,3,4,5] ,0  ))
+console.log(first_elem([1,2,3,4,5] , -1 ))
+console.log(first_elem([1,2,3,4,5] , 5 ))
 
 
 
