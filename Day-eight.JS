@@ -56,3 +56,5 @@ for (var i=0; i<arr1.length; i++)
 }
 console.log(item+" ( " +mf +" times ) ") ;
   
+
+// Day 8th of the javaScript has not been good to be honest but I'll will do my best from next time . 
