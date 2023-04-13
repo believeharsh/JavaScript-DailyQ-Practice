@@ -25,22 +25,17 @@ const result = [];
 console.log(result.join(''));
 
 
-// const Swap_str_char = function (Str) {
-//   for(let x=0; x<Str.length; x++)
-//   {
-//     if(Str.includes(Str[x]))
-//     {
-//       result.push(Str[x].toLowerCase());
-//     }
-//     else if(Str.includes(Str[x]))
-//     {
-//       result.push(Str[x].toUpperCase());
-//     }
-//     else 
-//     {
-//       result.push(Str[x]);
-//     }
-//   }
-// }
-// let final = Swap_str_char('The Quick Brown Fox');
-// final()
+// 10. Write a JavaScript program which prints the elements of the following array. Go to the editor
+// Note : Use nested for loops.
+// Sample array : var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+
+const a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+ 
+for (let i in a) 
+{
+   console.log("row " + i);
+   for (let j in a[i]) 
+     {
+      console.log(" " + a[i][j]);
+     }
+}
