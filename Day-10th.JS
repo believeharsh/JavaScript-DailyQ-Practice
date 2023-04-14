@@ -23,3 +23,15 @@ function sum_sq(array) {
       return sum;
   }
   console.log(squaresum(10));  
+
+  // 12. Write a JavaScript program to compute the sum and product of an array of integers.
+
+const Array = [1, 2, 3, 4, 5, 6]
+let sum = 0; 
+let prod = 1; 
+for(let i = 0; i<Array.length ; i++) { 
+  sum += Array[i]
+  prod *= Array[i]
+}
+console.log(`sum of array = ${sum}`)
+console.log(`prod of array = ${prod}`)
