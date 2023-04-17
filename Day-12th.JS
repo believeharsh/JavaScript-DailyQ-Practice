@@ -26,7 +26,9 @@ for(n = 0; n < color.length; n++){
 console.log(output);
 }
 
-// Ordinal Number :  Ordinal numbers are the numbers that indicate the exact position of something or someone at a place. If the number of objects/persons are specified in a list: the position of the objects/persons is defined by ordinal numbers.
+// Ordinal Number :  Ordinal numbers are the numbers that indicate the exact position of something or someone at a place.
+//                      If the number of objects/persons are specified in a list: the position of the objects/persons is
+//                      defined by ordinal numbers.
 
 
 // 16. Write a JavaScript program to find the leap years in a given range of years.
