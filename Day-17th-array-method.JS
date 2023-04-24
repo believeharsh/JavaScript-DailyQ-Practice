@@ -87,3 +87,14 @@ arr3.flat(2);
 const arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
 arr4.flat(Infinity);
 // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+
+// 6. foreach() : The forEach() method executes a provided function once for each array element.
+const check_foreach_method = ['a', 'b', 'c'];
+
+check_foreach_method.forEach(element => console.log(`your element is ${element}`));
+
+// Expected output: "a"
+// Expected output: "b"
+// Expected output: "c"
