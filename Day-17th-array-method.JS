@@ -98,3 +98,90 @@ check_foreach_method.forEach(element => console.log(`your element is ${element}`
 // Expected output: "a"
 // Expected output: "b"
 // Expected output: "c"
+
+
+// 7. indesof() : The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+// Expected output: 1
+
+// Start from index 2
+console.log(beasts.indexOf('bison', 3));
+// Expected output: 4
+
+console.log(beasts.indexOf('giraffe'));
+// Expected output: -1
+
+
+const arrayLike = {
+  length: 3,
+  0: 2,
+  1: 3,
+  2: 4,
+};
+console.log(Array.prototype.indexOf.call(arrayLike, 2));
+// 0
+console.log(Array.prototype.indexOf.call(arrayLike, 5));
+// 
+
+
+// 8. lastIndexOf() : The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
+
+// const animals = ['Dodo','monkey','Tiger' , 'donkey',  'Penguin' , 'Tiger' , 'Harsh' , 'dahiya' , 'Tiger'];
+
+// console.log(animals.lastIndexOf('Dodo'));
+// // Expected output: 3
+
+// console.log(animals.lastIndexOf('Tiger'));
+// // Expected output: 1
+
+
+//  let x = function Reduce_method (accumulator , currentValue) {
+
+//    let Reducedable_arr = [15 , 16, 17, 18, 19 ]
+//    console.log(Reducedable_arr.reduce((accumulator, currentValue) => accumulator + currentValue, 10))
+//  }
+ 
+// x()
+
+
+// 8.slice() : The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+
+// syntax: 
+// slice()
+// slice(start)
+// slice(start, end)
+
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice(2));
+// Expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+console.log(animals.slice(-2));
+// Expected output: Array ["duck", "elephant"]
+
+console.log(animals.slice(2, -1));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice());
+// Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+
+
+// 9. splice() "The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place."
+const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+// Inserts at index 1
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+months.splice(4, 1, 'May');
+// Replaces 1 element at index 4
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "May"]
