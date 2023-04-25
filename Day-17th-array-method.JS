@@ -26,17 +26,17 @@ console.log(array1.copyWithin(1, 3));
 // Expected output: Array ["d", "d", "e", "d", "e"]
 
 
-const arrt = [1,2,3,5,6,7]
+const arrt = [1, 2, 3, 5, 6, 7]
 console.log(arrt.copyWithin(2, 1, 5))
 
 
 // 3. every() : The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
 const isBelowThreshold = (currentValue) => {
 
-    currentValue < 40;
+  currentValue < 40;
 }
 
-const array3 = [1, 30, 39, 29,41,  10, 13];
+const array3 = [1, 30, 39, 29, 41, 10, 13];
 
 console.log(array3.every(isBelowThreshold));
 // Expected output: true
@@ -142,7 +142,7 @@ console.log(Array.prototype.indexOf.call(arrayLike, 5));
 //    let Reducedable_arr = [15 , 16, 17, 18, 19 ]
 //    console.log(Reducedable_arr.reduce((accumulator, currentValue) => accumulator + currentValue, 10))
 //  }
- 
+
 // x()
 
 
@@ -185,3 +185,9 @@ months.splice(4, 1, 'May');
 // Replaces 1 element at index 4
 console.log(months);
 // Expected output: Array ["Jan", "Feb", "March", "April", "May"]
+
+
+
+
+
+
