@@ -21,3 +21,10 @@ const createCounter = function(init) {
   console.log(counter.reset()); // 5
   console.log(counter.decrement());
   
+
+
+
+
+
+
+  
