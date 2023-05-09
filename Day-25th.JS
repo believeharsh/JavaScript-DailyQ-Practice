@@ -20,3 +20,10 @@ function all_properties(obj)
 console.log(all_properties(Math));
 
 console.log(all_properties(Array));
+
+
+
+
+
+
+
