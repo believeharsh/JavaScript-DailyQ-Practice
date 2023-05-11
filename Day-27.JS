@@ -54,3 +54,23 @@ const sayHello = name => {
   sayHello("Harry", "Good Afternoon")
   console.log(x.name, x.exp)
   x.show()
+
+
+  const phones = {
+    Mi : "redmi-note8-Pro",
+    Sam : "sigma 52",
+    oppo : "f9",
+    Vivo : "vivo-v-15",
+    best : function() { 
+      console.log("your Redmi-note8-Pro")
+       setTimeout(() => {
+      console.log(`the redmi phone is ${this.Mi} or the vivo phone 
+                   is ${this.Vivo}`)
+        },2000)
+      }
+    
+    }
+    
+  // console.log(phones.Mi , Phones.Sam),
+    let execute = console.log(phones.best());
+  console.log(execute);
