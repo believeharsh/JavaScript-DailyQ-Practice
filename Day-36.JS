@@ -21,3 +21,15 @@ const x = 1;
 //   console.log("Harsh Dahiya ")
 // }
 // let a;
+
+
+
+var x;
+console.log(x === undefined); // true
+x = 3;
+
+(function () {
+  var x;
+  console.log(x); // undefined
+  x = "local value";
+})();
