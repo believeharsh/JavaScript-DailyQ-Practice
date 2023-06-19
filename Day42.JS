@@ -12,3 +12,6 @@ let item = 3;
 let newObject = collection.contains(item);
      
 console.log("Result : ", newObject);
+
+let x = document.getElementsByClassName("container")
+console.log(x.elementchild )
