@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ <div id="first">
+   Hey I'm first 
+ </div>
+  <div id="Harsh">harsh dahiya </div>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+    <script>
+        let x = document.getElementById('first');
+// x.insertAdjacentHTML('beforeend', '<div id="test" >HEllo</div>');
+// x.insertAdjacentHTML('beforebegin', '<div id="test" >HEllo</div>');
+// x.insertAdjacentHTML('afterbegin', '<div id="test" >HEllo</div>');
+// x.insertAdjacentHTML('afterend', '<div id="test" >HEllo</div>');
+// let text = "My inserted text";
+// x.insertAdjacentText("afterend", text);
+
+const span = document.getElementById('first');
+const span2 = document.getElementById('Harsh');
+span2.insertAdjacentElement("beforebegin", span);
+
+    </script>
+</body>
+
+</html>
