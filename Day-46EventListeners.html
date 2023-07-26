@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <div id="first">
+    <button id="button">CLick me</button>
+  </div>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+ <script>
+    // // revision done 
+// let x = setTimeout(function(){
+//   console.log("hii I'm learning JavaScript")
+// },2000)
+
+// let y = prompt("do you wannn see the setTimeout ( Yes , NO ) ")
+// if('NO' == y){
+//   clearTimeout(x)
+// }
+
+
+// const first = setInterval(function(){
+//   console.log("hey I'm set interval who is running in  every 5 seconds here")
+// },5000)
+//  let askforsetInval = prompt("do you wanna enjoy the setInterval (Yes , No )")
+// if('No' == askforsetInval ) {
+//   clearInterval(first)
+// }
+
+// addeventListener and removeEventListener in JavaScript 
+
+const a = function(e){
+  console.log(e)
+  console.log(e.target)
+  console.log(e.currentTarget)
+  console.log(e.clientX)
+  console.log(e.clientY)
+  console.log("hii i'm addeventlistener")
+};
+
+const b = function(e){
+  console.log("hii i'm second time addeventlistener")
+};
+
+const btn = document.getElementById('button')
+btn.addEventListener('click' , a)
+
+
+btn.addEventListener('click' , b)
+
+let rmevlisner = prompt("hey which one you would like to see (1 , 2)");
+if('1' == rmevlisner ){
+  btn.removeEventListener('click' , b)
+}
+else if('2' == rmevlisner){
+  btn.removeEventListener('click' , a)
+}
+
+
+
+
+
+ </script>
+</body>
+
+</html>
