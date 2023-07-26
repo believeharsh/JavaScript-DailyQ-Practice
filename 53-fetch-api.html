@@ -30,42 +30,42 @@ we'll have to create a seperate html file" -->
     //         console.log(data);
     //     })
     // }
-    // function getdata() {
-    //     console.log("Started get data");
-    //     let url = "https://api.github.com/users";
-    //     fetch(url).then((Response) => { // fetch always be ascynchrous process
-    //         console.log("inside first then")
-    //         return Response.parse();
-
-    //     }).then((data)=>{
-    //         console.log("Inside second then")
-    //         console.log(data);
-    //     })
-    // }
-
-    // console.log("before running getdata");
-    // getdata();
-    // console.log("after running getdata")
-
-    function postdata() {
+    function getdata() {
         console.log("Started get data");
-       
-         url = "http://dummy.restapiexample.com/api.v1.create";
-         data = '{"name" :"harshdahiya", "salary":"1245", "age" : "23"}'
-        parems = {
-            method : 'post',
-            headers: {
-                'content-type' : 'application/json'
+        let url = "https://api.github.com/users";
+        fetch(url).then((Response) => { // fetch always be ascynchrous process
+            console.log("inside first then")
+            return Response.parse();
 
-            },
-            body:data
-        }
-        fetch(url, parems).then(Response=>  Response.json())
-       .then(data => console.log(data)
-        )
+        }).then((data)=>{
+            console.log("Inside second then")
+            console.log(data);
+        })
     }
+
     console.log("before running getdata");
-   postdata();
+    getdata();
     console.log("after running getdata")
+
+//     function postdata() {
+//         console.log("Started get data");
+       
+//          url = "http://dummy.restapiexample.com/api.v1.create";
+//          data = '{"name" :"harshdahiya", "salary":"1245", "age" : "23"}'
+//         parems = {
+//             method : 'post',
+//             headers: {
+//                 'content-type' : 'application/json'
+
+//             },
+//             body:data
+//         }
+//         fetch(url, parems).then(Response=>  Response.json())
+//        .then(data => console.log(data)
+//         )
+//     }
+//     console.log("before running getdata");
+//    postdata();
+//     console.log("after running getdata")
 </script>
 </html>
