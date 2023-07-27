@@ -39,11 +39,11 @@ let seventh = "Happy learning";
 
 
 
-console.log(third.substring(10,20));
-console.log(third.substr(10,20));
+console.log(third.substring(10, 20));
+console.log(third.substr(10, 20));
 
-console.log(third.replace('seeta' , 'harsh'))
-console.log(third.replaceAll('seeta' , 'harsh'))
+console.log(third.replace('seeta', 'harsh'))
+console.log(third.replaceAll('seeta', 'harsh'))
 
 console.log(third.toUpperCase());
 console.log(third.toLowerCase());
@@ -53,7 +53,6 @@ console.log(third.trim())
 console.log(third.split(","))
 console.log(third.split(" "))
 console.log(third.split("|"))
-
 
 
 
