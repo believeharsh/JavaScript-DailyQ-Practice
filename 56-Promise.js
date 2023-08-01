@@ -9,3 +9,10 @@ alert("hello 2 in two seconds");
 },2000)
 console.log("my name is : Harsh three");
 console.log(promise)
+
+
+
+
+
+
+
