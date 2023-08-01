@@ -29,6 +29,12 @@ let p1 = new Promise((resolve, reject) => {
    console.log("tumhara bhi katega ")
  })
  
+
+
+
+
+
+ 
  
  
  
