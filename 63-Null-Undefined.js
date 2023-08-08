@@ -1,34 +1,34 @@
 // A very common test that can be done is to check if a variable is null or undefined, or even "empty", as the example below:
-// let username = 10;
-// let name = '';
-// if(name!==null  || name !== undefined || name !==''){
-//   username = name;
-//   console.log(username)
-// } else{
-//   username = "";
-//   console.log(username)
-// }
+let username = 10;
+let name = '';
+if(name!==null  || name !== undefined || name !==''){
+  username = name;
+  console.log(username)
+} else{
+  username = "";
+  console.log(username)
+}
 
-// let userName = name || "";
-// if(userName === undefined){
-//   console.log("true")
-// }
-// else{
-//   console.log("false")
-// }
-// console.log(userName)
+let userName = name || "";
+if(userName === undefined){
+  console.log("true")
+}
+else{
+  console.log("false")
+}
+console.log(userName)
 
-// var temp;
-// if(temp === undefined)
-// console.log("true");
-// else
-// console.log("false");
+var temp;
+if(temp === undefined)
+console.log("true");
+else
+console.log("false");
 
-// var temp=['a','b','c'];
-// if(temp[1] === undefined)
-// console.log("true");
-// else
-// console.log("false");
+var temp=['a','b','c'];
+if(temp[1] === undefined)
+console.log("true");
+else
+console.log("false");
 
 
 // ternary operator in js
@@ -45,22 +45,43 @@
 
 
 // one line ternary operator
-// let big = x > 10 ? true : false;
-// console.log(big) 
+let big = x > 10 ? true : false;
+console.log(big) 
 
 
 
 function x() {console.log('x')};
 function y() {console.log('y')};
 let z = 4;
-// if(z==3){
-//   x();
-//  console.log(x)
+if(z==3){
+  x();
+  // console.log(x)
   
-// }
-// else{
-//   y()
-//   console.log(y)
-// }
+}
+else{
+  y()
+  console.log(y)
+}
  // with ternary operator
 (z==3 ? x : y)() //shortcut
+
+
+// ................. Arugment destructuring ..................
+
+// function init(config){
+//   const s = config.s;
+//   const t = config.t;
+//   let x =  s + t;
+//   console.log(x)
+// }
+// init({s:1, t:2})
+
+// function init({s , t}){
+//   return s + t;
+// }
+// console.log(init({s:1, t:2}))
+
+// function init({s = 10 , t = 20}){
+//   return s + t;
+// }
+// console.log(init({s:1}))
