@@ -16,7 +16,7 @@
 
 // ..................... By Code With Harry.......................
 
-let p = fetch("“https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single”")
+let p = fetch('https://jsonplaceholder.typicode.com/users')
 p.then((response) => {
         console.log(response.status)
         console.log(response.ok)
@@ -27,9 +27,9 @@ p.then((response) => {
 })
 
 
-// let p = fetch("https://goweather.herokuapp.com/weather/Ny")
-// p.then((response) => { 
-//         return response.json()
-// }).then((response) => {
-//         console.log(response)
-// })
+let p2 = fetch('https://jsonplaceholder.typicode.com/users')
+p2.then((response) => { 
+        return response.json()
+}).then((response) => {
+        console.log(response)
+})
