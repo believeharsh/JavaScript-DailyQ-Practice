@@ -1,3 +1,4 @@
+// The JavaScript allows static methods that belong to the class rather than an instance of that class. Hence, an instance is not needed to call such static methods. Static methods are called on the class directly. It can be of any name. A class can contain more than one static method. If we define more than one static method with the same name, the last method is invoked by JavaScript. “this” keyword is used to call a static method within any other static method in JavaScript.
 class Animal {
     constructor(name) {
       // this.name = Animal.capitalize(name)
