@@ -1,3 +1,4 @@
+//JavaScript provides a variety of methods to define and execute Functions, there are named functions and anonymous functions, and then there are Functions that are executed as soon as they are mounted, these functions are known as Immediately Invoked Function Expressions or IIFEs.
 let a = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
