@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Throttling In Js</title>
+  </head>
+
+  <body>
+    <input type="text" id="search" onchange="Betterfunctionality()" />
+    <button id="myid" onclick="NewFun()">Hello</button>
+    <script>
+      const mythrottle = (fn, time) => {
+        return function (...args) {
+          document.getElementById("myid").disabled = true;
+          setTimeout(() => {
+            fn();
+          }, time);
+        };
+      };
+
+      const NewFun = mythrottle(() => {
+        document.getElementById("myid").disabled = false;
+        let counter = 0;
+        console.log("user clicked.!!");
+      }, 1000 / 2);
+    </script>
+
+     <!-- Throttling or sometimes also called throttle function is a practice used in websites. Throttling is used to call a function after every millisecond or a particular interval of time only the first click is executed immediately.
+     Let’s see, what will happen if the throttle function is not present on the web page. Then the number of times a button is clicked the function will be called the same number of times. -->
+     
+  </body>
+</html>
