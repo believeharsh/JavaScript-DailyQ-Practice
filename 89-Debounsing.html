@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function debounce(func, delay) {
+            let timer;
+
+            return function () {
+                const context = this;
+                console.log(context)
+                const args = arguments;
+                // console.log(args)
+                // console.log(args)
+
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    func.apply(context, args);
+                }, delay);
+            };
+        }
+        const debouncedFunction = debounce(function () {
+            // console.log("Function executed after a delay.");
+        }, 200); // Delay of 200 milliseconds
+
+        // Attach the debounced function to an event
+        window.addEventListener("resize", debouncedFunction);
+    </script>
+    
+</body>
+</html>

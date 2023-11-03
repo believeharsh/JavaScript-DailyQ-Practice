@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <input type="text" id="search" onchange="Betterfunctionality()">
+    <input type="text" id="search" onkeyup="Betterfunctionality()">
     <script>
         let counter = 0;
         function getdata() {
@@ -25,7 +25,11 @@
             }
         }
 
-        const Betterfunctionality = mydebounce(getdata, 2000);
+        const Betterfunctionality = mydebounce(getdata, 1000);
+
+
+
+
 
 
     </script>
