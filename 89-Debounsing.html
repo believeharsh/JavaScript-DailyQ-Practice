@@ -7,13 +7,18 @@
     <title>Document</title>
 </head>
 <body>
+
+    //Debouncing is a technique used in JavaScript to control the rate at which particular function or event handler is executed. It helps in optimizing performance and reducing the number of times a function is called, especially when dealing with events like resizing the window, scrolling, or typing in an input field. 
+
+    The main idea behind debouncing is to wait for a certain amount of time after the last event occurrence an dhten execute the associated function. This can be helpful in scenarios where events may fire rapidly and repeatedly ( such as keypress events) but you want to handle them only once afte a pause. 
+    
     <script>
         function debounce(func, delay) {
             let timer;
 
             return function () {
                 const context = this;
-                console.log(context)
+                // console.log(context)
                 const args = arguments;
                 // console.log(args)
                 // console.log(args)
