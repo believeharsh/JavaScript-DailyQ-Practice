@@ -10,7 +10,7 @@ let loadscript = (src) => {
       script.onerror = () => {
         reject(0)
       }
-    })
+    }).console
   }
   
   let scripturl =  loadscript("https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js");
