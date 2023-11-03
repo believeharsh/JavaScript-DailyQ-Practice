@@ -1,1 +1,2 @@
 // What is NPM? NPM is a package manager for Node.js packages, or modules if you like. www.npmjs.com hosts thousands of free packages to download and use. The NPM program is installed on your computer when you install Node.js. NPM is already ready to run on your computer!
+//  console.log("hey I'm good")
