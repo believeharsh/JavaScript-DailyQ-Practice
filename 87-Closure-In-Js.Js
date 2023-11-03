@@ -21,7 +21,7 @@ function returnFunc() {
           // let a = 3
           console.log(a)
         }
-        z()
+        z() 
       }
       a = 999
       y()
@@ -30,6 +30,8 @@ function returnFunc() {
   }
   
   let a = returnFunc()
-  a()
+  a();
+
+
   
   
