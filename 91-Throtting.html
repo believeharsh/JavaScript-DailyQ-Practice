@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throttling In Js</title>
+</head>
+<body style="background-color: black;"
+    <input type="text" style="background-color: white border aqua">
+    <button id="Mybtn" onclick="CheckThrottling()">Check Now </button>
+    <script>
+
+        const LearnThrottling = function(fn, d){
+            return function(...args){
+                document.getElementById("Mybtn").disabled = true;
+                setTimeout(() => {
+                    fn()
+                    
+                }, d);
+        
+            }
+        }
+        
+        const CheckThrottling = LearnThrottling(() => {
+            document.getElementById("Mybtn").disabled = false;
+            console.log("user Clicked Now!!")
+        
+        }, 2000)
+    </script>
+    
+</body>
+</html>
+
+
