@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Throttling In Js</title>
 </head>
-<body style="background-color: black;"
-    <input type="text" style="background-color: white border aqua">
-    <button id="Mybtn" onclick="CheckThrottling()">Check Now </button>
-    <script>
 
-        const LearnThrottling = function(fn, d){
+<body >
+
+
+    In JavaScript, throttling is a technique used to limit the rate at which a particular function or action can be executed. Throttling ensures that a function is called at most once within a specified time interval, even if it is invoked more frequently.
+
+    The primary use case for throttling is to control the frequency of certain events or actions, such as handling scroll events, resizing the window, or handling user input like button clicks or keypresses. Throttling can help prevent excessive execution of these functions, which can be especially useful for improving performance and responsiveness in web applications. 
+    <br>
+    <br>
+
+    <button id="Mybtn" onclick="CheckThrottling()">Check Now</button>
+    <script>
+          const LearnThrottling = function(fn, d){
             return function(...args){
                 document.getElementById("Mybtn").disabled = true;
                 setTimeout(() => {
                     fn()
-                    
+
                 }, d);
-        
+
             }
         }
-        
+
         const CheckThrottling = LearnThrottling(() => {
             document.getElementById("Mybtn").disabled = false;
             console.log("user Clicked Now!!")
-        
+
         }, 2000)
+
+     
+
     </script>
-    
+
+
+
+
 </body>
+
 </html>
-
-
