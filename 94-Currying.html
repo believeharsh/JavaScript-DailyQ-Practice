@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currying in JavaScript</title>
+</head>
+
+<body>
+    <script>
+        // What is Currying in JavaScript?
+        // It is a technique in functional programming, that transforms the function of multiple arguments into several functions of a single argument in sequence. 
+
+        //We simply wrap a function inside a function, which means we are going to return a function from another function to obtain this kind of translation. The parent function takes the first provided argument and returns the function that takes the next argument and this keeps on repeating till the number of arguments ends. Hopefully, the function that receives the last argument returns the expected result.  
+
+        // Note: An American mathematician named Haskell Curry developed this technique, that’s why it is called currying.
+
+
+        // const learnCurrying = function (a) {
+        //     return function (b) {
+        //         return function (c) {
+        //             return a + b + c;
+        //         }
+
+        //     }
+        // }
+
+        // const result = learnCurrying(2)
+        // const withinresult = result(5)
+        // const thirdfunction = withinresult(10)
+        // console.log(thirdfunction)
+        // But this is not the good way at all so now currying has  its own importance
+
+        // const ResultwithCurrying = learnCurrying(10)(10)(10);
+        // console.log(ResultwithCurrying)
+
+
+        // Second example
+
+        userobj = {
+            name: "Harsh",
+            age: 19,
+            class: "BCA Third Semester"
+        }
+
+        function userinfo(obj) {
+            return function (userinfo) {
+
+                return function (userinfo) {
+                    return obj[userinfo]
+                }
+            }
+
+        }
+        let Result = userinfo(userobj);
+        console.log(Result('age')('class'))
+
+        function calculateVolume(length) {
+            return function (breadth) {
+                return function (height) {
+                    return length * breadth * height;
+                }
+            }
+        }
+        console.log(calculateVolume(4)(5)(6));
+    </script>
+
+</body>
+
+</html>
