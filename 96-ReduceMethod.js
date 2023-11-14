@@ -72,3 +72,4 @@ let StoreResult = MyCheck.reduce(function(sum, num)
 },0)
  
 console.log(StoreResult)
+
