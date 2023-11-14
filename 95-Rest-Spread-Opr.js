@@ -58,6 +58,7 @@ console.log(rest); // {b: 2, c: 3}
 // Q: Can I use Spread and Rest Operators in any JavaScript version?
 // No, these are features of ECMAScript 6 (ES6) and later, so they won't work in older versions of JavaScript.
 
+
 // Q: Can the Spread Operator be used with any data type?
 // It can be used with any iterable, including arrays, objects, and strings.
 
