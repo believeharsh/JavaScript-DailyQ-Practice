@@ -15,10 +15,11 @@ const persons = [
     {firstname : "Jayne", lastname: "Cobb"}
   ];
   
-  persons.map(getFullName);
+   const HD = persons.map(getFullName);
   
   function getFullName(item) {
-    return [item.firstname,item.lastname].join(" ");
+    return [item.firstname, item.lastname].join(" ");
   }
-  const Result = getFullName();
-  console.log(Result)
+console.log(HD)
+//
+// Yes, in JavaScript, the map method always returns a new array. The map method is used to create a new array by applying a provided function to each element of the original array. The function is applied to every element in the array, and the results are collected into a new array. It does not modify the original array.
