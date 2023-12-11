@@ -33,4 +33,5 @@ fun() // Calling the expression
 function fun() {
   var name = 'Mukul latiyan'
   console.log(name)
+  
 }
