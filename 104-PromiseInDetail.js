@@ -75,3 +75,16 @@ promise2
         //error handler function is invoked 
         console.log(errorMessage);
     });
+
+
+    // ****** Example with fetch api function of JS
+
+    let fetchRes = fetch(
+        "https://jsonplaceholder.typicode.com/todos/1");
+        
+        // FetchRes is the promise to resolve
+        // it by using.then() method
+        fetchRes.then(res =>
+            res.json()).then(d => {
+                console.log(d)
+            })
