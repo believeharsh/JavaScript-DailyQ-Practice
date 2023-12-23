@@ -1,6 +1,6 @@
 // Promise.race()
 
-// In javaScript Promise.race method is used to get the first settled promsie that either can be resolved and rejected, but it will provide the first settled Promise. 
+// In javaScript Promise.race method is used to get the first settled promsie that either can be resolved and rejected, but it will provide the first settled Promise.   
 
 const p1 = new Promise((res,rej) => {
   setTimeout(()=> res("P1 has been succussful"),3000);
