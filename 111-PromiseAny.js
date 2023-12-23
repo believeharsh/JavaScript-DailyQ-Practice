@@ -13,6 +13,7 @@ const p1 = new Promise((res,rej) => {
   const p2 = new Promise((res,rej) => {
     // setTimeout(()=> res("P2 has been succussful"),101);
     setTimeout(()=> rej("P2 has been rejected Now "),1010);
+    
   });
   const p3 = new Promise((res, rej) => {
     setTimeout(()=> rej("P3 has been rejected Now "),1020);
