@@ -23,16 +23,25 @@ const p1 = new Promise((res, rej) => {
     
   })
   // 1. Promise.all() method 
+  
   // Promise.all([p1, p2,p3]).then((res)=> console.log(res)).catch((err)=> console.error(err))
   
   // firstly It will get the all resultes from promises and then it will print the result but if any promise get rejected then it will error only. 
   
+
+
   // 2. Promise.allSettled() method
+
   // Promise.allSettled([p1, p2,p3]).then((res)=> console.log(res)).catch((err)=> console.error(err))
+
   // if any promise gets rejected then it still wait for another promise to be settled and finally it will return the result that either can be resolved or rejceted
   
+
+
   // 3. Promise.race() method
+
   // Promise.race([p1, p2,p3]).then((res)=> console.log(res)).catch((err)=> console.error("p2 has been rejcted now"))
+
   // this will return the first promise which will be settled firstly that is either can be resolved and rejcted
   
   
