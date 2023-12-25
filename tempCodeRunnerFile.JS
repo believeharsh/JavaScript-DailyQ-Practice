@@ -1,3 +1,1 @@
-catch((error) => {
-    //   console.error(error); // Output: Operation failed
-    // });
+console.log(text)
