@@ -11,6 +11,9 @@ document.addEventListener('keydown', function(e){
         
       }
     });
+
+    // This is how we can stop the default shourtcuts and create our own shourtcuts by using preventDefault() function 
+    
     
     
     let x = 10 
