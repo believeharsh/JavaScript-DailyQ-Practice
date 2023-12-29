@@ -2,6 +2,8 @@
 // JavaScript provides some features for handling errors in javaScript. 
 // which are : try, Catch, finally, throw
 
+// The throw statement throws an exception which means we can throw the custom an error
+
 
 
 // :::::::: Simple definition
