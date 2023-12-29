@@ -53,3 +53,7 @@ async function Handledata() {
   // This will give an error which is : data.then() is not a funciton
 }
 Handledata();
+
+
+
+
