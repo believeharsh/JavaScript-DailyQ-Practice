@@ -27,3 +27,5 @@ else{console.log("a is defined ")}
 
 
 // JavaScript knows as a loosly types languages because it don't restrict to the user to store onle one type of data rather you have a liberty to hold and kind of data into it. 
+
+
