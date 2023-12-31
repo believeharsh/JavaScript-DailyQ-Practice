@@ -5,7 +5,7 @@
 
 
 // Primitive data types:
-// The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types.
+// The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types. like numberes, bollean, undefined etc.
 
 
 
