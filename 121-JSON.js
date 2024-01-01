@@ -11,11 +11,12 @@
 
 
 {
-  "name": "John Doe",
-  "age": 30,
-  "isStudent": false,
-  "courses": ["Math", "History", "English"]
+    "name": "John Doe",
+        "age": 30,
+            "isStudent": false,
+                "courses": ["Math", "History", "English"]
 }
+
 
 // In the example above, you have key-value pairs such as "name": "John Doe" and "age": 30. Arrays, denoted by square brackets, are used for representing ordered lists (e.g., the "courses" array).
 
