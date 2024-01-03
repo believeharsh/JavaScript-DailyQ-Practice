@@ -3,6 +3,7 @@
 
 // In JavaScript, the "heap" refers to a region of memory used for dynamic memory allocation. This is where objects, closures, and other dynamically allocated data are stored. When you create objects or arrays in JavaScript, they are allocated memory on the heap.
 
+
 // JavaScript uses automatic memory management, also known as garbage collection, to handle memory allocation and deallocation. The garbage collector is responsible for identifying and reclaiming memory that is no longer in use, preventing memory leaks.
 
 // Objects on the heap can be referenced by variables in your code. When an object is no longer reachable (i.e., there are no references to it), it becomes eligible for garbage collection, and the memory it occupies can be reclaimed.
