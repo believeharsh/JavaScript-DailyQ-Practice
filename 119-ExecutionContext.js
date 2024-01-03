@@ -10,6 +10,7 @@
 
 
 
+
 // Phases of the JavaScript Execution Context
 // There are two phases of JavaScript execution context:
 
