@@ -13,6 +13,7 @@
 // Overall, it is generally recommended to use the let and const keywords instead of var when declaring variables in react. This will help to avoid unexpected behavior and potential bugs.
 
 // Why we should use let and const instead of var?
+
 // In JavaScript, the let and const keywords were introduced in ES6 to provide more control over variable scoping and mutability. Here are some reasons why you should use let and const instead of the older var keyword:
 
 // 1. Block Scope:
