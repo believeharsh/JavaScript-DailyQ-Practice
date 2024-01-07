@@ -6,8 +6,8 @@
 // The forEach() method is a very useful tool for working with arrays, and it is often used in conjunction with other methods, such as map() and filter().
 
 // Here is an example of how to use the forEach() method:
-// const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 
-// numbers.forEach(number => {
-//   console.log(number);
-// });
+numbers.forEach(number => {
+  console.log(number);
+});
